@@ -54,14 +54,7 @@ export default function Home() {
           buttonName={"continue with apple".toUpperCase()}
         />
       </div>
-      <div className="flex justify-center mb-2">
-        <Button
-          icon={
-            " "
-          }
-          buttonName={"continue with apple".toUpperCase()}
-        />
-      </div>
+
     </div>
   );
 }
