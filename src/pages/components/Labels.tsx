@@ -5,7 +5,7 @@ interface LabelProps {
 
 const Labels = (props: LabelProps) => {
     return (
-    <h1 className="flex justify-center text-4x1 TE">
+    <h1 className="flex justify-center text-4x1">
         <span>{props.icon}</span>
         <span>{props.text}</span>
         </h1>

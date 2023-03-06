@@ -2,13 +2,14 @@ import React from "react";
 import { Inter } from "next/font/google";
 import Button from "./components/Button";
 import Labels from "./components/Labels";
+import Text from "./components/Text";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="flex-1 m-10 p-5 bg-slate-300">
-      <div className="text-center text-3xl font-bold m-5">
+    <div className="flex-1  p-10 h-screen">
+      <div className="text-center text-3xl font-bold m-2 pb-5">
         <Labels
           icon={
             <svg viewBox="0 0 50 50" width="40px" height="40px">
@@ -18,8 +19,12 @@ export default function Home() {
           text="Spotify."
         />
       </div>
+      <div className="pb-2 text-sm font-sans font-semibold">
+        <Text text="To continue, log in to Spotify."/>
+      </div>
       <div className="flex justify-center mb-2">
       <Button
+      id="btn1"
       icon={
             <svg viewBox="0 0 48 48" width="25px" height="25px">
           <linearGradient
@@ -66,6 +71,7 @@ export default function Home() {
           buttonName={"continue with google".toUpperCase()}
         />
       </div>
+      
     </div>
   );
 }
