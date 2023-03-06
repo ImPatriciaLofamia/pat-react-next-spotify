@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center mb-2">
         <Button
-          id="btn1"
+
           icon={
             <svg viewBox="0 0 48 48" width="25px" height="25px">
               <linearGradient
@@ -91,7 +91,7 @@ export default function Home() {
         <br />
       </div>
       <div className="">
-        <span className="font-bold">
+        <span className="font-bold font-sans">
           <Text text="Email address or username" />
         </span>
         <span className="flex justify-center p-1">
@@ -99,7 +99,7 @@ export default function Home() {
         </span>
       </div>
       <div className="">
-        <span className="font-bold">
+        <span className="font-bold font-sans">
           <Text text="Password" />
         </span>
         <span className="flex justify-center p-1">
