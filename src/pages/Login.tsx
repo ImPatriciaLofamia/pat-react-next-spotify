@@ -139,12 +139,25 @@ export const Login = () => {
               <Text paragraph="Password" />
               <InputBox props="Password" />
             </div>
+            <div className="">
+              <div>
+                <a
+                  className="inline-block align-baseline font-bold underline text-sm text-black hover:text-green-500"
+                  href="#"
+                >
+                  Forgot your password?
+                </a>
+              </div>
+              <div className="">
+                    
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex justify-end w-8/12">
           <div className="flex justify-end pt-2 w-6/12">
             <Button
-              className="bg-green-500 text-black hover:bg-green-700"
+              className="bg-green-500 text-black hover:bg-green-600"
               buttonName={"login".toUpperCase()}
             />
           </div>
