@@ -1,10 +1,10 @@
 export default {
-  ButtonNames : [
+  data : [
     {
-      facebook: "CONTINUE WITH FACEBOOK"
+  
     },
     {
-      apple: 'CONTINUE WITH APPLE'
+
     }
   ],
 };
