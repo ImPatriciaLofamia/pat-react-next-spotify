@@ -10,14 +10,14 @@ interface FormProps {
 const Form = (props: FormProps) => {
   return (
     <div className="flex justify-center">
-      <div className="bg-yellow-200 w-4/12">
-        <div className="flex justify-start bg-pink-400">
+      <div className="w-4/12">
+        <div className="flex justify-start">
           <span className="font-bold font-sans">
             <Text paragraph={props.text} />
           </span>
         </div>
-        <div className="flex justify-start bg-purple-400">
-          <span className="flex justify-center bg-slate-400">
+        <div className="flex justify-start">
+          <span className="flex justify-center">
             <InputBox text={props.text}/>
           </span>
         </div>

@@ -61,7 +61,7 @@ export const Login = () => {
             <div className="flex justify-center mb-2">
               <Button
                 icon={
-                    <svg
+                  <svg
                     viewBox="0,0,256,256"
                     width="25px"
                     height="25px"
@@ -121,19 +121,19 @@ export const Login = () => {
           </div>
         </div>
 
-        <div>
-          <br />
+        <div className="flex justify-center">
+          <div className="w-4/12 pt-2 pb-2 border-b-2"></div> <p className=" font-sans font-bold">OR</p>
+          <div className="w-4/12 pt-2 pb-2 border-b-2"></div>
         </div>
 
-        <div className="bg-teal-400">
+        <div className="">
           <Form
             text="Email address or username"
             paragraph="Email address or username"
           />
           <Form text="Password" paragraph="Password" />
-          </div>
-        <div className="pt-2 pb-2 border-b-2"></div>
-     
+        </div>
+
         <div className="flex justify-end w-8/12">
           <div className="flex justify-end pt-2 w-6/12">
             <Button
@@ -141,6 +141,10 @@ export const Login = () => {
               buttonName={"Login".toUpperCase()}
             />
           </div>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="w-4/12 pt-2 pb-2 border-b-2"></div>
         </div>
       </div>
     </div>
