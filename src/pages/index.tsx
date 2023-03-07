@@ -91,7 +91,7 @@ export default function Home() {
         <br />
       </div>
       <div className="">
-        <span className="font-bold font-sans">
+        <span className="font-bold font-sans flex justify-start ml-44">
           <Text text="Email address or username" />
         </span>
         <span className="flex justify-center p-1">
@@ -99,7 +99,7 @@ export default function Home() {
         </span>
       </div>
       <div className="">
-        <span className="font-bold font-sans">
+        <span className="font-bold font-sans flex justify-start ml-44">
           <Text text="Password" />
         </span>
         <span className="flex justify-center p-1">
