@@ -1,10 +1,20 @@
 import React from "react";
 import { Inter } from "next/font/google";
-import { Login } from "./Login";
+import SideBarNav from "./components/SideBarNav";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-   <Login/>
+    <div>
+      <main>
+        <SideBarNav/>
+        {/* This is center */}
+      </main>
+
+      <div>
+        {/* This is the player */}
+      </div>
+    </div>
   );
 }
