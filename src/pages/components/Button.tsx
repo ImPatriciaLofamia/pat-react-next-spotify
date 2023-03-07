@@ -1,8 +1,10 @@
 
+
 interface ButtonProps {
     buttonName: string,
     icon: any
-}   
+}
+
 const Button = (props:ButtonProps) => {
     
     return(
