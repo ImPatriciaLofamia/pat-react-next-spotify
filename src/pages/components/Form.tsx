@@ -4,13 +4,14 @@ import InputBox from "./InputBox";
 import Button from "./Button";
 
 interface FormProps {
-  text: string;
+  text: string,
+  className: string
 }
 
 const Form = (props: FormProps) => {
   return (
     <div className="flex justify-center">
-      <div className="w-4/12">
+      <div className="w-4/12 pt-2">
         <div className="flex justify-start">
           <span className="font-bold font-sans">
             <Text paragraph={props.text} />

@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import Labels from "./components/Labels";
 import Text from "./components/Text";
 import Form from "./components/Form";
+import InputBox from "./components/InputBox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,7 @@ export const Login = () => {
           <div className="">
             <div className="flex justify-center mb-2">
               <Button
-                className="bg-blue-500"
+                className="bg-blue-500  hover:bg-blue-700"
                 icon={
                   <svg viewBox="0 0 48 48" width="25px" height="25px">
                     <linearGradient
@@ -88,7 +89,7 @@ export const Login = () => {
                     </g>
                   </svg>
                 }
-                className="bg-black text-white"
+                className="bg-black text-white hover:bg-slate-700"
                 buttonName={"continue with apple".toUpperCase()}
               />
             </div>
@@ -114,7 +115,7 @@ export const Login = () => {
                     />
                   </svg>
                 }
-                className="bg-white text-black"
+                className="bg-white text-black  hover:bg-slate-300"
                 buttonName={"continue with google".toUpperCase()}
               />
             </div>
@@ -122,27 +123,32 @@ export const Login = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="w-4/12 pt-2 pb-2 border-b-2"></div> <p className=" font-sans font-bold">OR</p>
-          <div className="w-4/12 pt-2 pb-2 border-b-2"></div>
+          <div className=" w-2/12 pt-2 pb-2 border-t-2"></div>{" "}
+          <p className=" font-sans font-bold text-xs">OR</p>
+          <div className="w-2/12 pt-2 pb-2 border-t-2"></div>
         </div>
 
-        <div className="">
-          <Form
-            text="Email address or username"
-            paragraph="Email address or username"
-          />
-          <Form text="Password" paragraph="Password" />
-        </div>
+        <div className="flex justify-center pt-3">
+          <div className=" w-4/12">
+            <div className="">
+              <Text paragraph="Email address or username" />
+              <InputBox props="Email address or username" />
+            </div>
 
+            <div>
+              <Text paragraph="Password" />
+              <InputBox props="Password" />
+            </div>
+          </div>
+        </div>
         <div className="flex justify-end w-8/12">
           <div className="flex justify-end pt-2 w-6/12">
             <Button
-              className="bg-green-500 text-black"
-              buttonName={"Login".toUpperCase()}
+              className="bg-green-500 text-black hover:bg-green-700"
+              buttonName={"login".toUpperCase()}
             />
           </div>
         </div>
-
         <div className="flex justify-center">
           <div className="w-4/12 pt-2 pb-2 border-b-2"></div>
         </div>
