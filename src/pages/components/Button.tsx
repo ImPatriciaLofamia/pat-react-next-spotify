@@ -1,13 +1,18 @@
+import React from "react"
+
 interface ButtonProps {
     buttonName: string,
-    icon: any
-}   
-const Button = (props:ButtonProps) => {
-    return(
+    icon: any,
+    className: string
+}
 
-        <button className="flex justify-center text-2xl font-bold border-2 border-teal-900 py-2 px-4 rounded-full w-8/12">
-            <span className="pr-1 ">{props.icon}</span>
-            <span className="">{props.buttonName}</span>
+const Button = ({className,buttonName, icon}:ButtonProps) => {
+    
+    return(
+        <button
+        className={`${className} flex justify-center text-1xl font-bold border w-4/12 border-gray-400  py-1 px-3 rounded-full pb-3 pt-3`}>
+            <span className="pr-1">{icon}</span>
+            <span>{buttonName}</span>
         </button>
 
     )
