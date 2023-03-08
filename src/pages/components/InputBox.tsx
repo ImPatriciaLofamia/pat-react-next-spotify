@@ -18,9 +18,9 @@ const InputBox = ({
 }: InputBoxProps) => {
   return (
     <>
-      {label && <p>{label}</p>}
+      {label && <p className="text-sm font-bold">{label}</p>}
       <input
-        className={`${className} bg-white border pb-3 pt-3 mb-1 w-full border-gray-400 text-base text-black font-medium rounded-lg`}
+        className={`${className} ${type && "accent-green-600"} bg-white border pb-3 pt-3  border-gray-400 text-base text-black font-medium rounded-lg`}
         placeholder={placeholder}
         type={type}
         value={value}
